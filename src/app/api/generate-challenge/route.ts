@@ -19,7 +19,7 @@ async function buildChallenge() {
       The constraint should be clearly evaluable by an AI.
 
       Examples of good constraint types:
-      - Word count limits (e.g., "under 50 words", "exactly 100 words").
+      - Word count limits (e.g., "under 50 words", "around 100 words"), dont give a too specific word count because that would disturb the flow of writing.
       - Use/avoid specific word types (e.g., "without using any adverbs", "use at least three adjectives describing sound").
       - Include specific literary devices (e.g., "include at least two similes", "use personification for an inanimate object").
       - Perspective (e.g., "write in the first person", "write in the third person limited").
@@ -70,7 +70,7 @@ export async function GET() {
   }
 }
 
-/** Optional POST support (nice if you want to call with method:"POST") */
+// Optional POST support 
 export async function POST() {
   return GET();
 }

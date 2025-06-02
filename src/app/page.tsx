@@ -87,6 +87,11 @@ export default function WritingTutorPage() {
 
 
   // --- Start: Logic for Writing Streaks (Remains the same as before) ---
+  // TODO: need to cache completed days in localStorage
+  // This will track the days the user has completed writing challenges
+  // and calculate current and longest streaks based on that data.
+  // This logic is adapted from the previous implementation, but should use localStorage for persistence.
+  // This will allow the user to see their writing streaks even after refreshing the page.
   const [completedDays, setCompletedDays] = useState<string[]>([]);
   const [currentStreak, setCurrentStreak] = useState(0);
   const [longestStreak, setLongestStreak] = useState(0);
@@ -361,7 +366,7 @@ export default function WritingTutorPage() {
               Evaluating...
             </span>
           ) : (
-            "Submit for Feedback"
+            "Submit for Feedback ✨"
           )}
         </Button>
 

@@ -58,7 +58,7 @@ export default function LibraryPage() {
   return (
     <div className="min-h-[calc(100vh-64px)] bg-background text-foreground flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
       <h1 className="text-4xl sm:text-5xl font-bold text-center mb-10 text-primary drop-shadow-lg">
-        Your Writing Library
+        Your Library
       </h1>
 
       <div className="w-full max-w-3xl space-y-4">
